@@ -1,5 +1,5 @@
 #pragma once
-#define GLOBAL_VERSION 1
+//#define GLOBAL_VERSION 1
 
 #include <windows.h>
 #include <math.h>

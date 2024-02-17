@@ -4,82 +4,78 @@
 extern WNDPROC lpWndProc;
 extern HWND lpWindow;
 
-struct OPTIONS
-{
-	bool bMenu;
-	unsigned int dwMenuKey;
+struct OPTIONS {
+  bool bMenu;
+  unsigned int dwMenuKey;
 
-	bool bNoclip;
-	unsigned int dwNoclipKey;
-	float flNoclipSpeed;
+  bool bNoclip;
+  unsigned int dwNoclipKey;
+  float flNoclipSpeed;
 
-	bool bEsp;
-	float flEspDistance;
-	bool bEspMonster;
-	bool bEspNpc;
-	bool bEspProp;
-	bool bEspMission;
+  bool bEsp;
+  float flEspDistance;
+  bool bEspMonster;
+  bool bEspNpc;
+  bool bEspProp;
+  bool bEspMission;
 
-	bool bDumpEnemies;
+  bool bDumpEnemies;
 
-	bool bPeeking;
+  bool bPeeking;
 
-	bool bFov;
-	float flFov;
+  bool bFov;
+  float flFov;
 
-	bool bBattleSpeed;
-	float flBattleDarkTeamSpeed;
-	float flBattleLightTeamSpeed;
+  bool bBattleSpeed;
+  float flBattleDarkTeamSpeed;
+  float flBattleLightTeamSpeed;
 
-	bool bAutoTalk;
-	bool bAutoTalkDisableDelay;
-	bool bAutoTalkSkipScenes;
+  bool bAutoTalk;
+  bool bAutoTalkDisableDelay;
+  bool bAutoTalkSkipScenes;
 
-	bool bQuestTeleport;
-	unsigned int dwQuestTeleportKey;
+  bool bQuestTeleport;
+  unsigned int dwQuestTeleportKey;
 
-	bool bChestTeleport;
-	unsigned int dwChestTeleportKey;
+  bool bChestTeleport;
+  unsigned int dwChestTeleportKey;
 
-	bool bSkipCutscene;
+  bool bSkipCutscene;
 
-	bool bFpsIndicator;
-	int iFpsValue;
+  bool bFpsIndicator;
+  int iFpsValue;
 
-    bool bUnlockAutoBattle;
+  bool bUnlockAutoBattle;
 
-    OPTIONS() :
-        bMenu(FALSE),
-        dwMenuKey(VK_INSERT),
-        bNoclip(FALSE),
-        dwNoclipKey(0),
-        flNoclipSpeed(15.f),
-        bEsp(FALSE),
-        flEspDistance(25.f),
+  OPTIONS()
+      : bMenu(FALSE),
+        dwMenuKey('0'),
+        bNoclip(TRUE),
+        dwNoclipKey('5'),
+        flNoclipSpeed(10.f),
+        bEsp(TRUE),
+        flEspDistance(50.f),
         bEspMonster(FALSE),
         bEspNpc(FALSE),
-        bEspProp(FALSE),
-        bEspMission(FALSE),
-        bDumpEnemies(FALSE),
+        bEspProp(TRUE),
+        bEspMission(TRUE),
+        bDumpEnemies(TRUE),
         bPeeking(FALSE),
         bFov(FALSE),
         flFov(100.f),
-        bBattleSpeed(FALSE),
-        flBattleDarkTeamSpeed(5.f),
-        flBattleLightTeamSpeed(2.f),
-        bAutoTalk(FALSE),
-        bAutoTalkDisableDelay(FALSE),
-        bAutoTalkSkipScenes(FALSE),
-        bQuestTeleport(FALSE),
-        dwQuestTeleportKey(0),
-        bChestTeleport(FALSE),
-        dwChestTeleportKey(0),
-        bSkipCutscene(FALSE),
+        bBattleSpeed(TRUE),
+        flBattleDarkTeamSpeed(100.f),
+        flBattleLightTeamSpeed(3.f),
+        bAutoTalk(TRUE),
+        bAutoTalkDisableDelay(TRUE),
+        bAutoTalkSkipScenes(TRUE),
+        bQuestTeleport(TRUE),
+        dwQuestTeleportKey('2'),
+        bChestTeleport(TRUE),
+        dwChestTeleportKey('1'),
+        bSkipCutscene(TRUE),
         bFpsIndicator(TRUE),
-        iFpsValue(60),
-        bUnlockAutoBattle(FALSE)
-    {
-    }
+        iFpsValue(59) {}
 };
 
 extern OPTIONS Options;

@@ -1,4 +1,4 @@
-#define GLOBAL_VERSION 1
+//#define GLOBAL_VERSION 1
 
 #include "main.h"
 
